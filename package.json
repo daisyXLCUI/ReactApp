@@ -1,0 +1,40 @@
+{
+  "name": "reactapp",
+  "version": "1.0.0",
+  "description": "react develepment by daisy",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --hot"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/daisyXLCUI/ReactApp.git"
+  },
+  "keywords": [
+    "react"
+  ],
+  "author": "daisy",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/daisyXLCUI/ReactApp/issues"
+  },
+  "homepage": "https://github.com/daisyXLCUI/ReactApp#readme",
+  "dependencies": {
+    "babel-core": "^6.26.0",
+    "babel-loader": "^7.1.2",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-react": "^6.24.1",
+    "css-loader": "^0.28.8",
+    "image-loader": "0.0.1",
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0",
+    "style-loader": "^0.19.1",
+    "webpack": "^3.10.0",
+    "webpack-dev-server": "^2.9.7"
+  },
+  "devDependencies": {
+    "babel-preset-stage-2": "^6.24.1",
+    "react-hot-loader": "^3.1.3"
+  }
+}
