@@ -2,13 +2,14 @@
   "name": "reactapp",
   "version": "1.0.0",
   "description": "react develepment by daisy",
-  "main": "index.js",
+  "main": "index.html",
   "scripts": {
-    "start": "webpack-dev-server --hot"
+    "start": "webpack-dev-server --hot",
+    "build": "webpack"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/daisyXLCUI/ReactApp.git"
+    "url": "git+https://github.com/daisyXLCUI/ReactJS.git"
   },
   "keywords": [
     "react"
@@ -16,9 +17,9 @@
   "author": "daisy",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/daisyXLCUI/ReactApp/issues"
+    "url": "https://github.com/daisyXLCUI/ReactJS/issues"
   },
-  "homepage": "https://github.com/daisyXLCUI/ReactApp#readme",
+  "homepage": "https://github.com/daisyXLCUI/ReactJS#readme",
   "dependencies": {
     "babel-core": "^6.26.0",
     "babel-loader": "^7.1.2",
