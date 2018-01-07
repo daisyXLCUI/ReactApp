@@ -5,7 +5,10 @@ module.exports = {
       path: __dirname + '/build',
       filename: "bundle.js"
   },
-  
+  devtool: 'source-map', 
+  resolve: {    //指定可以被import的文件名后缀
+         extensions: ['.js', '.jsx','.sass','.ts']  
+     },  
   devServer: {
 		inline: true,
 		port: 8083
