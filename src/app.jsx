@@ -1,15 +1,68 @@
-import React from 'react';
+import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
+import './index.css';
 
-class App extends React.Component {
-  render(){ // Every react component has a render method.
-    return( // Every render method returns jsx. Jsx looks like HTML, but it's actually javascript and functions a lot like xml, with self closing tags requiring the `/` within the tag in order to work propperly
-      <div>
-        Hello World jsx-src 
-      </div>
-    );
-  }
+class Title extends Component {
+	renderSex(goodWord, badWord){
+		const word = true
+		return word ? goodWord : badWord
+	}
+	
+	render(){ 
+	  const word = 'hello word';
+	  var daisyApp = 'header';
+	  let isGood = true;
+	  var headerStyle = {
+		  'color' : 'green',
+	  	  'width': '400px',
+	  	  'height': 'auto',
+	  	  'background': '#fa2345'
+	  };
+	  return( 
+	      <div>
+	        <h1>{word} {1+2}</h1>
+	        <h2 style={headerStyle}>React 小书 {isGood ? 'is good' : null}</h2>
+	        <h3 className='daisyApp'>Welcome {((function(){ return 'daisy'})())}</h3>
+	        <h3 className='daisyApp'>Xiao Ming is {this.renderSex(<span>a boy</span>,<span>a girl</span>)}</h3>	 
+	      </div>
+	  )
+	}
 }
 
-ReactDOM.render(<App />, document.querySelector('#app'));
+
+class Header extends Component {
+	handleClick(word){
+		console.log(this, word)
+	}
+	
+	bark (a) {
+	   console.log(a)
+	}
+	  
+	run (b) {
+	   console.log(b)
+	}
+	
+	handleDog(a,b){
+		this.bark(a);
+		this.run(b);
+	}
+	
+	render(){	  
+	  return( 
+		  <div>
+		  	<div className='dogOne' onClick = {()=>{this.bark('bark');this.run('run')}} >DOG</div> 
+		  	<div className='dogOne' onClick = {()=>{this.handleDog('barkTwo','runTwo')}} >DOG Two</div> 
+		  	<div className='dogOne' onClick = {this.handleDog.bind(this, 'barkTwoo','runTwoo')} >DOG Twoo</div> 
+		  	<h1>header</h1><button onClick={()=>{this.handleClick('函数调用')}}>函数调用</button>
+		  	<h1>header</h1><button onClick={this.handleClick('函数声明')}>函数声明</button>
+		  	<h1>header</h1><button onClick={this.handleClick.bind(this,'函数声明到调用')}>函数声明.bind+','+转化成函数调用</button>
+	        <Title />
+	        <Title />
+	      </div>
+	  )
+	}
+}
+
+ReactDOM.render(<Header />, document.querySelector('#app'));
 
