@@ -1,0 +1,15 @@
+.appStyle{
+    margin: 20px;
+}
+.daisyApp{
+    color: red;
+}
+.dogOne{
+    padding: 10px;
+    height: 30px;
+    line-height: 30px;
+}
+.titleStyle{
+    border: 1px solid #999;
+    margin: 20px;
+}

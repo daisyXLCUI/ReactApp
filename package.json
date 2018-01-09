@@ -4,7 +4,7 @@
   "description": "react develepment by daisy",
   "main": "index.html",
   "scripts": {
-    "start": "webpack-dev-server --hot",
+    "start": "webpack-dev-server --inline", 
     "build": "webpack"
   },
   "repository": {
@@ -30,6 +30,7 @@
     "image-loader": "0.0.1",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
+    "react-router": "^2.8.1",
     "style-loader": "^0.19.1",
     "webpack": "^3.10.0",
     "webpack-dev-server": "^2.9.7"
