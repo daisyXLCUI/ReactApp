@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-import {Link, Route, Router, Redirect, IndexRoute, hashHistory} from 'react-router';
 
 
 import Header from './commont/header.jsx';
