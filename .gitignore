@@ -1,0 +1,11 @@
+.DS_Store
+.idea
+.vscode
+node_modules
+yarn.lock
+logs
+build
+www
+app
+*.log
+.*.swp
